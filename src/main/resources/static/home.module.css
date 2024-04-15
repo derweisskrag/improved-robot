@@ -1,3 +1,122 @@
+/*
+    General Styles
+
+*/
+
 h1 {
     color: blue;
+}
+
+body {
+    background-color: lavender;
+}
+
+/* Navigation */
+
+
+.navigation {
+    /* Arrange elements in row direction */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    /* Add gap */
+    gap: 5px;
+
+    /* Padding */
+    padding: 5px 10px;
+
+    /* Dimensions */
+
+}
+
+.menu {
+    /* Position links in a row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Add gap between links */
+    gap: 15px;
+}
+
+.logo {
+}
+
+.navigation .menu ul {
+    /* Remove decorations */
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu ul li:active{
+    font-weight: bold;
+    color: blue;
+}
+
+.active{
+    font-weight: bold;
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    /* Apply dimensions */
+    width: 500px;
+    height: 300px;
+
+    /* Add border */
+    border: 5px groove darkslategray;
+}
+
+.login-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* Apply margin top */
+    margin-top: 25px;
+}
+
+.login-btn {
+    align-self: end;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.if-no-account-text {
+    /* Add margin */
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

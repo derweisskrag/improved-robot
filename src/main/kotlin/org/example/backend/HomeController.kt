@@ -17,6 +17,10 @@ class HtmlController {
     @GetMapping("/")
     fun home(model: Model): String {
         model["message"] = "Home"
+
+        // pass the user prop
+        model["user"] = "Guest"
+
         return "home"
     }
 
