@@ -6,20 +6,23 @@ import org.springframework.ui.Model
 import org.springframework.ui.set
 
 /**
- * This is the Home page of the BackendApp
+ * This is the SignUp page of the BackendApp
  *
  *
  */
 
 @Controller
-class HtmlController {
+class SignUpController {
 
-    @GetMapping("/")
-    fun home(model: Model): String {
+    @GetMapping("/signup")
+    fun signup(model: Model): String {
+
         // pass the user prop
+        // reuse this
+        // TODO: Think how to make HOC.
         model["user"] = "Guest"
 
-        return "home"
+        return "signup"
     }
 
 }
